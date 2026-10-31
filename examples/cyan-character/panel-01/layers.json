@@ -1,0 +1,171 @@
+{
+  "width": 2000,
+  "height": 1496,
+  "stack": "bottom-to-top",
+  "source_resolution": [
+    2000,
+    1496
+  ],
+  "color_generation_resolution": [
+    1450,
+    1085
+  ],
+  "layout_box": [
+    0,
+    0,
+    2000,
+    1496
+  ],
+  "layers": [
+    {
+      "id": "rear_hair",
+      "name": "后发｜位于头脸后方",
+      "file": "layers/01_rear_hair.png",
+      "mode": "hair",
+      "parent": "HEAD_CTRL",
+      "pivot": [
+        662,
+        248
+      ],
+      "notes": "补全后脑与肩后发量；必须放在头脸和肩部下方"
+    },
+    {
+      "id": "head_neck",
+      "name": "头脸与颈部｜保留回头俯视姿态",
+      "file": "layers/02_head_neck.png",
+      "mode": "head",
+      "parent": "HEAD_CTRL",
+      "pivot": [
+        386,
+        1048
+      ],
+      "notes": "补全刘海下皮肤与肩后下颌；眼嘴保持线稿表情"
+    },
+    {
+      "id": "eye_viewer_left_white",
+      "name": "viewer_left｜眼白补底",
+      "file": "layers/03_eye_viewer_left_white.png",
+      "mode": "eye",
+      "parent": "EYE_VIEWER_LEFT_CTRL",
+      "pivot": [
+        447,
+        543
+      ],
+      "notes": "眼白无原虹膜残留；与对应眼框共同移动"
+    },
+    {
+      "id": "eye_viewer_left_iris",
+      "name": "viewer_left｜虹膜瞳孔高光",
+      "file": "layers/04_eye_viewer_left_iris.png",
+      "mode": "iris",
+      "parent": "EYE_VIEWER_LEFT_CTRL",
+      "pivot": [
+        447,
+        543
+      ],
+      "notes": "沿用已认可的分层青蓝虹膜与高光；仅小幅视线移动"
+    },
+    {
+      "id": "eye_viewer_left_frame",
+      "name": "viewer_left｜眼睑睫毛眉与遮挡",
+      "file": "layers/05_eye_viewer_left_frame.png",
+      "mode": "eye",
+      "parent": "EYE_VIEWER_LEFT_CTRL",
+      "pivot": [
+        447,
+        543
+      ],
+      "notes": "眼开口遮挡眼球；周围肤色窄范围过渡，不支持直接压扁来眨眼"
+    },
+    {
+      "id": "eye_viewer_right_white",
+      "name": "viewer_right｜眼白补底",
+      "file": "layers/06_eye_viewer_right_white.png",
+      "mode": "eye",
+      "parent": "EYE_VIEWER_RIGHT_CTRL",
+      "pivot": [
+        812,
+        692
+      ],
+      "notes": "眼白无原虹膜残留；与对应眼框共同移动"
+    },
+    {
+      "id": "eye_viewer_right_iris",
+      "name": "viewer_right｜虹膜瞳孔高光",
+      "file": "layers/07_eye_viewer_right_iris.png",
+      "mode": "iris",
+      "parent": "EYE_VIEWER_RIGHT_CTRL",
+      "pivot": [
+        812,
+        692
+      ],
+      "notes": "沿用已认可的分层青蓝虹膜与高光；仅小幅视线移动"
+    },
+    {
+      "id": "eye_viewer_right_frame",
+      "name": "viewer_right｜眼睑睫毛眉与遮挡",
+      "file": "layers/08_eye_viewer_right_frame.png",
+      "mode": "eye",
+      "parent": "EYE_VIEWER_RIGHT_CTRL",
+      "pivot": [
+        812,
+        692
+      ],
+      "notes": "眼开口遮挡眼球；周围肤色窄范围过渡，不支持直接压扁来眨眼"
+    },
+    {
+      "id": "shoulder_upperarm",
+      "name": "肩部与上臂｜肤色",
+      "file": "layers/09_shoulder_upperarm.png",
+      "mode": "fixed",
+      "parent": "ROOT_CTRL",
+      "pivot": [
+        469,
+        1186
+      ],
+      "notes": "脸下圆弧为裸露肩部；袖口接触边固定，随身体共同呼吸"
+    },
+    {
+      "id": "front_hair",
+      "name": "刘海与面前侧发",
+      "file": "layers/10_front_hair.png",
+      "mode": "hair",
+      "parent": "HEAD_CTRL",
+      "pivot": [
+        662,
+        248
+      ],
+      "notes": "位于脸前；根部固定，末端轻动；与后发分开"
+    },
+    {
+      "id": "sleeve_folds",
+      "name": "衣袖与褶皱｜白青布料",
+      "file": "layers/11_sleeve_folds.png",
+      "mode": "cloth",
+      "parent": "ROOT_CTRL",
+      "pivot": [
+        621,
+        1324
+      ],
+      "notes": "衣袖不是皮肤；袖口边固定，布料内部微动，不整体拉离肩部"
+    }
+  ],
+  "controls": {
+    "ROOT_CTRL": [
+      1000,
+      1197
+    ],
+    "HEAD_CTRL": [
+      386,
+      1048
+    ],
+    "EYE_VIEWER_LEFT_CTRL": [
+      447,
+      543
+    ],
+    "EYE_VIEWER_RIGHT_CTRL": [
+      812,
+      692
+    ]
+  }
+}

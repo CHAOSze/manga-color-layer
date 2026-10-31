@@ -1,0 +1,29 @@
+{
+  "psd_layers": 14,
+  "canvas": [
+    1448,
+    1086
+  ],
+  "actual_AE_test": false,
+  "source_irises_preserved": true,
+  "generated_sclera_used_only_near_removed_irises": true,
+  "gaze_preview": {
+    "frames": 40,
+    "horizontal_px": 4,
+    "vertical_px": 2
+  },
+  "occlusion": "opaque eye frame above iris; white backing below",
+  "reopened_composite_mean_error": 0.2686370379747051,
+  "import_syntax_checked": true,
+  "four_direction_visual_review": true,
+  "preserved_parts": [
+    "back_left",
+    "back_right",
+    "neck",
+    "torso",
+    "head",
+    "mouth",
+    "cap",
+    "arm"
+  ]
+}

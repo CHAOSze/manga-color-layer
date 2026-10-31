@@ -1,0 +1,613 @@
+{
+  "width": 1448,
+  "height": 1086,
+  "stack": "bottom-to-top",
+  "intent": "漫画镜头动效：身体与头发分层，眼嘴独立控制，左右眼球独立移动及眼睑遮挡",
+  "controls": {
+    "ROOT_CTRL": [
+      620,
+      1030
+    ],
+    "BODY_CTRL": [
+      610,
+      800
+    ],
+    "HEAD_CTRL": [
+      610,
+      640
+    ],
+    "HAND_CTRL": [
+      380,
+      850
+    ],
+    "EYE_L_CTRL": [
+      542.5,
+      313.5
+    ],
+    "EYE_R_CTRL": [
+      717.2,
+      362.2
+    ]
+  },
+  "layers": [
+    {
+      "id": "back_left",
+      "name": "后发左｜完整发根",
+      "mode": "bend",
+      "parent": "HEAD_CTRL",
+      "reason": "独立重绘完整部件与遮挡重叠区，保留漫画质感",
+      "pins": [
+        {
+          "xy": [
+            393,
+            365
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            404,
+            450
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            185,
+            445
+          ],
+          "role": "tip"
+        },
+        {
+          "xy": [
+            280,
+            560
+          ],
+          "role": "tip"
+        },
+        {
+          "xy": [
+            371,
+            620
+          ],
+          "role": "tip"
+        }
+      ],
+      "pivot": [
+        394,
+        392
+      ],
+      "index": 0,
+      "file": "layers/01_back_left.png",
+      "bbox": [
+        156,
+        290,
+        641,
+        762
+      ]
+    },
+    {
+      "id": "back_right",
+      "name": "后发右｜完整发根",
+      "mode": "bend",
+      "parent": "HEAD_CTRL",
+      "reason": "独立重绘完整部件与遮挡重叠区，保留漫画质感",
+      "pins": [
+        {
+          "xy": [
+            787,
+            554
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            739,
+            577
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            680,
+            728
+          ],
+          "role": "tip"
+        },
+        {
+          "xy": [
+            779,
+            708
+          ],
+          "role": "tip"
+        }
+      ],
+      "pivot": [
+        747,
+        561
+      ],
+      "index": 1,
+      "file": "layers/02_back_right.png",
+      "bbox": [
+        580,
+        277,
+        914,
+        766
+      ]
+    },
+    {
+      "id": "neck",
+      "name": "脖颈｜上下重叠衔接",
+      "mode": "bridge",
+      "parent": "ROOT_CTRL",
+      "reason": "独立重绘完整部件与遮挡重叠区，保留漫画质感",
+      "pins": [
+        {
+          "xy": [
+            410,
+            535
+          ],
+          "role": "head_attach"
+        },
+        {
+          "xy": [
+            476,
+            605
+          ],
+          "role": "head_attach"
+        },
+        {
+          "xy": [
+            553,
+            645
+          ],
+          "role": "head_attach"
+        },
+        {
+          "xy": [
+            701,
+            605
+          ],
+          "role": "head_attach"
+        },
+        {
+          "xy": [
+            560,
+            780
+          ],
+          "role": "body_attach"
+        },
+        {
+          "xy": [
+            650,
+            820
+          ],
+          "role": "body_attach"
+        },
+        {
+          "xy": [
+            662,
+            743
+          ],
+          "role": "body_attach"
+        }
+      ],
+      "pivot": [
+        610,
+        710
+      ],
+      "index": 2,
+      "file": "layers/03_neck.png",
+      "bbox": [
+        360,
+        457,
+        720,
+        897
+      ]
+    },
+    {
+      "id": "torso",
+      "name": "躯干｜完整袖后衣料",
+      "mode": "breath",
+      "parent": "ROOT_CTRL",
+      "reason": "独立重绘完整部件与遮挡重叠区，保留漫画质感",
+      "pins": [
+        {
+          "xy": [
+            200,
+            1080
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            550,
+            1080
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            1040,
+            1080
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            260,
+            650
+          ],
+          "role": "chest"
+        },
+        {
+          "xy": [
+            690,
+            835
+          ],
+          "role": "chest"
+        }
+      ],
+      "pivot": [
+        620,
+        1030
+      ],
+      "index": 3,
+      "file": "layers/04_torso.png",
+      "bbox": [
+        0,
+        557,
+        1276,
+        1086
+      ]
+    },
+    {
+      "id": "head",
+      "name": "头部｜眼嘴下方完整脸底",
+      "mode": "rigid",
+      "parent": "HEAD_CTRL",
+      "reason": "保留原轮廓鼻耳；眼嘴下方使用配准并局部色彩匹配的云端皮肤补画",
+      "pins": [],
+      "pivot": [
+        610,
+        640
+      ],
+      "index": 4,
+      "file": "layers/05_head.png",
+      "bbox": [
+        360,
+        114,
+        869,
+        672
+      ]
+    },
+    {
+      "id": "eye_viewer_left_sclera",
+      "name": "画面左眼白底",
+      "mode": "rigid",
+      "parent": "EYE_L_CTRL",
+      "reason": "同一眼部控制器下，眼球独立位移；上方眉眼框遮挡眼球，下方完整眼白补画",
+      "pins": [],
+      "pivot": [
+        542.5,
+        313.5
+      ],
+      "index": 5,
+      "file": "layers/06_eye_viewer_left_sclera.png",
+      "bbox": [
+        492,
+        283,
+        578,
+        332
+      ]
+    },
+    {
+      "id": "eye_viewer_left_iris",
+      "name": "画面左眼球｜虹膜瞳孔高光",
+      "mode": "rigid",
+      "parent": "EYE_L_CTRL",
+      "reason": "同一眼部控制器下，眼球独立位移；上方眉眼框遮挡眼球，下方完整眼白补画",
+      "pins": [],
+      "pivot": [
+        542.5,
+        313.5
+      ],
+      "index": 6,
+      "file": "layers/07_eye_viewer_left_iris.png",
+      "bbox": [
+        527,
+        297,
+        559,
+        331
+      ]
+    },
+    {
+      "id": "eye_viewer_left_frame",
+      "name": "画面左眉眼框｜眼睑遮挡",
+      "mode": "rigid",
+      "parent": "EYE_L_CTRL",
+      "reason": "同一眼部控制器下，眼球独立位移；上方眉眼框遮挡眼球，下方完整眼白补画",
+      "pins": [],
+      "pivot": [
+        542.5,
+        313.5
+      ],
+      "index": 7,
+      "file": "layers/08_eye_viewer_left_frame.png",
+      "bbox": [
+        445,
+        232,
+        640,
+        370
+      ]
+    },
+    {
+      "id": "eye_viewer_right_sclera",
+      "name": "画面右眼白底",
+      "mode": "rigid",
+      "parent": "EYE_R_CTRL",
+      "reason": "同一眼部控制器下，眼球独立位移；上方眉眼框遮挡眼球，下方完整眼白补画",
+      "pins": [],
+      "pivot": [
+        717.2,
+        362.2
+      ],
+      "index": 8,
+      "file": "layers/09_eye_viewer_right_sclera.png",
+      "bbox": [
+        683,
+        340,
+        775,
+        393
+      ]
+    },
+    {
+      "id": "eye_viewer_right_iris",
+      "name": "画面右眼球｜虹膜瞳孔高光",
+      "mode": "rigid",
+      "parent": "EYE_R_CTRL",
+      "reason": "同一眼部控制器下，眼球独立位移；上方眉眼框遮挡眼球，下方完整眼白补画",
+      "pins": [],
+      "pivot": [
+        717.2,
+        362.2
+      ],
+      "index": 9,
+      "file": "layers/10_eye_viewer_right_iris.png",
+      "bbox": [
+        702,
+        347,
+        733,
+        379
+      ]
+    },
+    {
+      "id": "eye_viewer_right_frame",
+      "name": "画面右眉眼框｜眼睑遮挡",
+      "mode": "rigid",
+      "parent": "EYE_R_CTRL",
+      "reason": "同一眼部控制器下，眼球独立位移；上方眉眼框遮挡眼球，下方完整眼白补画",
+      "pins": [],
+      "pivot": [
+        717.2,
+        362.2
+      ],
+      "index": 10,
+      "file": "layers/11_eye_viewer_right_frame.png",
+      "bbox": [
+        642,
+        306,
+        831,
+        434
+      ]
+    },
+    {
+      "id": "mouth",
+      "name": "嘴部｜保留原张嘴表情",
+      "mode": "rigid",
+      "parent": "HEAD_CTRL",
+      "reason": "原始五官完整保留，局部皮肤边缘过渡；支持小幅独立运动，不含眨眼或口型绑定",
+      "pins": [],
+      "pivot": [
+        576,
+        525
+      ],
+      "index": 11,
+      "file": "layers/12_mouth.png",
+      "bbox": [
+        470,
+        410,
+        682,
+        645
+      ]
+    },
+    {
+      "id": "cap",
+      "name": "前发与中央刘海｜连续发根",
+      "mode": "bend",
+      "parent": "HEAD_CTRL",
+      "reason": "独立重绘完整部件与遮挡重叠区，保留漫画质感",
+      "pins": [
+        {
+          "xy": [
+            480,
+            165
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            760,
+            115
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            837,
+            211
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            410,
+            250
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            225,
+            296
+          ],
+          "role": "tip"
+        },
+        {
+          "xy": [
+            300,
+            374
+          ],
+          "role": "tip"
+        },
+        {
+          "xy": [
+            439,
+            387
+          ],
+          "role": "tip"
+        },
+        {
+          "xy": [
+            486,
+            436
+          ],
+          "role": "tip"
+        },
+        {
+          "xy": [
+            777,
+            366
+          ],
+          "role": "tip"
+        },
+        {
+          "xy": [
+            857,
+            424
+          ],
+          "role": "tip"
+        },
+        {
+          "xy": [
+            607,
+            341
+          ],
+          "role": "tip"
+        }
+      ],
+      "pivot": [
+        650,
+        180
+      ],
+      "index": 12,
+      "file": "layers/13_cap.png",
+      "bbox": [
+        171,
+        53,
+        900,
+        668
+      ]
+    },
+    {
+      "id": "arm",
+      "name": "握杖手与袖子｜统一可动层",
+      "mode": "bend",
+      "parent": "ROOT_CTRL",
+      "reason": "保留原图手势和衣褶；手部保持刚性，袖底固定，中间连续弯曲",
+      "pins": [
+        {
+          "xy": [
+            190,
+            1070
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            450,
+            1070
+          ],
+          "role": "fixed"
+        },
+        {
+          "xy": [
+            275,
+            952
+          ],
+          "role": "transition"
+        },
+        {
+          "xy": [
+            465,
+            950
+          ],
+          "role": "transition"
+        },
+        {
+          "xy": [
+            300,
+            790
+          ],
+          "role": "wrist_attach"
+        },
+        {
+          "xy": [
+            460,
+            790
+          ],
+          "role": "wrist_attach"
+        },
+        {
+          "xy": [
+            390,
+            700
+          ],
+          "role": "wrist_attach"
+        }
+      ],
+      "pivot": [
+        330,
+        1030
+      ],
+      "index": 13,
+      "file": "layers/14_arm.png",
+      "bbox": [
+        157,
+        642,
+        530,
+        1086
+      ]
+    }
+  ],
+  "facial_scope": {
+    "side_convention": "viewer",
+    "supported": "independent eye region, mouth region and iris translation",
+    "not_implemented": [
+      "blink",
+      "lip sync"
+    ],
+    "iris_preview_range_px": {
+      "horizontal": 4,
+      "vertical": 2
+    },
+    "occlusion": "sclera below iris; aperture frame above iris; hair above eye groups"
+  },
+  "control_parents": {
+    "BODY_CTRL": "ROOT_CTRL",
+    "HEAD_CTRL": "ROOT_CTRL",
+    "HAND_CTRL": "ROOT_CTRL",
+    "EYE_L_CTRL": "HEAD_CTRL",
+    "EYE_R_CTRL": "HEAD_CTRL"
+  }
+}

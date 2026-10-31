@@ -77,6 +77,34 @@ GIF 为小幅发束形变检查：侧发自由端水平约 ±4 像素，中刘�
 
 示例放在 `examples/`，不属于运行 skill 的必要依赖；只安装技能的用户可以不保留该目录。ZIP 下载页中选择下载原始文件即可获取完整压缩包。
 
+### 更多角色分层示例
+
+以下图片展示的是**分层后的静态组合**和全部部件；这里没有将静态组合标作分层前上色图。它们是既有制作成果的发布整理，本次未重跑图像生成或 AE/Cubism 绑定。
+
+#### 青发角色（图 1，11 层）
+
+<img src="examples/cyan-character/panel-01/colored-character.png" alt="青发角色图 1 的分层后静态组合" width="480">
+
+![青发角色图 1 的全部 11 层](examples/cyan-character/panel-01/previews/all-layers.jpg)
+
+![青发角色图 1 的本地小范围运动检查](examples/cyan-character/panel-01/reviews/motion-preview.gif)
+
+示例保留前后发、肩部与衣袖、左右眼的眼白/虹膜/眼睑遮挡等独立层。衣袖与肩部保持接触，不支持任意拉开；原有本地检查范围及限制见[制作说明](examples/cyan-character/README.md)。
+
+[完整素材 ZIP](examples/cyan-character/cyan-character-assets.zip) · [分层 PSD](examples/cyan-character/panel-01/character-layers.psd) · [逐层透明 PNG](examples/cyan-character/panel-01/layers/)
+
+#### 红发角色（14 层）
+
+<img src="examples/red-character/colored-character.png" alt="红发角色的分层后静态组合" width="480">
+
+![红发角色的全部 14 层](examples/red-character/previews/all-layers.jpg)
+
+![红发角色的本地视线移动检查](examples/red-character/reviews/gaze-preview.gif)
+
+示例包含头发、头脸颈、躯干、嘴部、握持道具的手袖，以及左右眼的眼白、虹膜和眉眼框。视线预览为本地检查，没有完整眨眼或口型绑定；详见[示例说明](examples/red-character/EXAMPLE-NOTES.md)。
+
+[完整素材 ZIP](examples/red-character/red-character-assets.zip) · [分层 PSD](examples/red-character/character-layers.psd) · [逐层透明 PNG](examples/red-character/layers/)
+
 ## 安装
 
 ### 方法一：通过 Skill Installer

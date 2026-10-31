@@ -1,0 +1,17 @@
+{
+  "psd_reopened": true,
+  "layers": 11,
+  "canvas": [
+    2000,
+    1496
+  ],
+  "ae_executed": false,
+  "renderer": "local root-weighted deformation preview",
+  "tested_working_pixel_motion": {
+    "hair_tip": 5,
+    "head": 2,
+    "forearm": 1.5,
+    "cloth_interior": 2
+  },
+  "inferred_regions": "scalp, hidden face/neck, hair roots and occluded garment; single-view approximations"
+}
