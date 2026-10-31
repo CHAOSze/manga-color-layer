@@ -1,13 +1,45 @@
-# Blonde maid animation layers
+# 金发女仆角色：分层示例
 
-The two movable foreground layers are bangs_middle (one complete long strip, rounded root and tapered tips) and bangs_sides (left/right hair combined into one continuous crown and side-lock plate). The side locks intentionally stay together: separate controls caused unstable boundaries without useful extra motion. The full painted under-center hairline is baked into bangs_sides itself; there is no separate crown/scalp/root layer. Hiding bangs_middle shows that same complete side plate, not an independently truncated backing.
+此示例共 19 层，用于展示参考图上色、遮挡补画、前发细化拆分和面部独立控制。左右均按画面方向命名。
 
-The 17 other original layers retain their artwork, including face/body/arms/toy rifle, posterior hair, brows, eyes, eyelashes, forward gaze and mouth. Four blink replacement drawings are hidden at rest; both irises retain PSD clipping. All layer opacities are 100%; material interiors are opaque.
+## 图层结构
 
-Use blonde-maid-import-to-ae.jsx for aligned PNG import and BANGS_MIDDLE_CTRL / BANGS_SIDES_CTRL parents. Keep side roots fixed near y100 and the middle attachment near y120 and deform the free lengths. blonde-maid-puppet-pins.json supplies suggestions. Local raster checks cover independent and opposing center/combined-side movements: center free tips +/-3px horizontal and +/-1px vertical, sides +/-4px and +/-1.5px. Whole center translation +/-3px and +/-1px is also a diagnostic. These are local previews, not an actual After Effects run or an unrestricted motion guarantee.
+前发保留两个可动图层：
 
-The central leaf follows the original registered root and tips; the concealed under-center surface is an inferred redraw. expression and overall hairstyle are compared against the accepted colored master. A full reference-PSD strip, rather than its cropped visible region, guided the construction.
+- `bangs_middle`：从实际发根到发梢连续的中刘海，保留已确认的轮廓与细节。
+- `bangs_sides`：左右刘海与共享发根组成的连续图层，包含中刘海后方的完整补画，不再额外拆出头顶层。
 
-The cloud-painted quiet under-center surface is retained intact inside bangs_sides. The original central leaf is isolated from its actual parting, rather than exposing the trial strip's oversized hidden root over the crown. No extra head-top plate is exported. Strong downscaling uses area prefiltering before registration to preserve fine line continuity. reviews includes rest comparison, complete solo strip, middle-hidden saved-PSD inspection and small-motion extremes.
+其余 17 层保留头部与身体、后发、眉毛、眼白、虹膜、上下眼皮、泪水和嘴部等内容。4 个半闭眼/闭眼替换层默认隐藏，两个虹膜保留剪贴遮挡关系。图层不透明度均为 100%，应为不透明材质的内部像素也保持不透明。
 
-The corrected side-hair plate retains the complete earlier cloud-painted flow. Its repaired region is composited above the superseded extraction, so old center-edge ink cannot reappear over the completion. The accepted middle plate is unchanged.
+隐藏中刘海后，可检查左右刘海的补画是否连续。修复区域使用已确认的补画覆盖旧的提取线稿，避免旧边线重新压在补画上；中刘海保持已确认的内容。
+
+## 文件与下载
+
+- [完整素材 ZIP](blonde-maid-assets.zip)：包含 PSD、透明 PNG、导入文件和检查资料。
+- [分层 PSD](blonde-maid-layers.psd)。
+- [分层前确认的上色图](blonde-maid-color-master.png)：上色阶段的结果。
+- [分层后的静态组合](blonde-maid-colored.png)：PSD 图层默认组合的结果，与上色阶段图片分开展示。
+- [全部图层总览](previews/all-layers.jpg)：包含默认隐藏的替换层。
+- [原图与上色对比](previews/coloring-comparison.jpg)。
+- [本地小幅摆动预览](previews/hair-motion.gif)。
+- [睁眼、半闭眼和闭眼形状](previews/blink-states.jpg)。
+
+`layers/` 中的 PNG 保持统一画布与坐标，属于独立部件，不是时间序列。`blonde-maid-layers.json` 记录图层顺序、文件和控制信息。
+
+## 导入与动作范围
+
+在 After Effects 中运行 `blonde-maid-import-to-ae.jsx`，可导入对齐的 PNG 并建立控制器；也可将 PSD 以合成方式导入。左右刘海与中刘海分别使用 `BANGS_SIDES_CTRL`、`BANGS_MIDDLE_CTRL`。导入脚本不等于完整绑定，仍需设置木偶网格、固定点和关键帧。
+
+`blonde-maid-puppet-pins.json` 提供固定点建议：左右刘海的根部约束在画布纵坐标 100 附近，中刘海的连接处约束在纵坐标 120 附近，再对自由段做小幅形变。
+
+历史本地检查中，中刘海自由端约水平 ±3、垂直 ±1 像素，左右刘海自由端约水平 ±4、垂直 ±1.5 像素。README 中的反向摆动 GIF 对中刘海使用了较小幅度。这些范围针对示例工作画布，不是任意分辨率下的通用设置。
+
+## 检查与限制
+
+检查内容包括：对比确认的上色图与导出的静态组合、单独查看图层、在保存的 PSD 中隐藏中刘海检查底层，以及小范围独立和反向形变。检查图与记录可在完整 ZIP 的 `reviews/` 中查看。
+
+本地预览不是 AE 或 Cubism 的实际运行录像，也不代表支持任意动作幅度。正式导入后仍需逐帧检查边界、固定点和虹膜遮挡；扩大动作范围时须重新检查。
+
+被遮挡的发根和其他不可见表面属于推断补画，不能无损还原作者未绘制的内容。局部补画的纹理、线条与上色原图可能存在细节差别；分层前上色图与分层后组合应分别保留，不可互相替代。
+
+开源项目，请勿用作商业用途。原作画稿与角色权利归各自权利人。
