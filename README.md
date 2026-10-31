@@ -83,15 +83,15 @@ GIF 为小幅发束形变检查：侧发自由端水平约 ±4 像素，中刘�
 
 #### 青发角色（图 1，11 层）
 
-<img src="examples/cyan-character/panel-01/colored-character.png" alt="青发角色图 1 的分层后静态组合" width="480">
+<img src="examples/cyan-character/colored-character.png" alt="青发角色图 1 的分层后静态组合" width="480">
 
-![青发角色图 1 的全部 11 层](examples/cyan-character/panel-01/previews/all-layers.jpg)
+![青发角色图 1 的全部 11 层](examples/cyan-character/previews/all-layers.jpg)
 
-![青发角色图 1 的本地小范围运动检查](examples/cyan-character/panel-01/reviews/motion-preview.gif)
+![青发角色图 1 的本地小范围运动检查](examples/cyan-character/reviews/motion-preview.gif)
 
 示例保留前后发、肩部与衣袖、左右眼的眼白/虹膜/眼睑遮挡等独立层。衣袖与肩部保持接触，不支持任意拉开；原有本地检查范围及限制见[制作说明](examples/cyan-character/README.md)。
 
-[完整素材 ZIP](examples/cyan-character/cyan-character-assets.zip) · [分层 PSD](examples/cyan-character/panel-01/character-layers.psd) · [逐层透明 PNG](examples/cyan-character/panel-01/layers/)
+[完整素材 ZIP](examples/cyan-character/cyan-character-assets.zip) · [分层 PSD](examples/cyan-character/character-layers.psd) · [逐层透明 PNG](examples/cyan-character/layers/)
 
 #### 红发角色（14 层）
 
