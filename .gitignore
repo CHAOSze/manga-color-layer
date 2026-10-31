@@ -17,3 +17,6 @@ models/
 *.pth
 .DS_Store
 Thumbs.db
+
+# Explicitly published demonstration PSD.
+!examples/blonde-maid/blonde-maid-layers.psd

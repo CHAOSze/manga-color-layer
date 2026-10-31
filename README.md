@@ -14,6 +14,39 @@
 
 仅需上色时可只执行上色流程；已有彩图时也可只做分层。分层数量不是质量指标：难以稳定拆分、且不需要独立运动的部位应合并。
 
+## 效果演示
+
+以下示例展示金发女仆角色的参考配色与分层结果。示例画稿和角色的权利归各自权利人；此处用于非商业效果交流，不构成对原作素材的授权。
+
+### 原图与上色
+
+![原图与上色效果对比](examples/blonde-maid/previews/coloring-comparison.jpg)
+
+### 前发细化拆分
+
+![中刘海与左右刘海独立图层](examples/blonde-maid/previews/hair-layers.jpg)
+
+此例前发保留两个图层：中刘海，以及包含完整遮挡补画的左右刘海。没有额外拆出头顶层；其他已确认的眼部、嘴部、后发和身体图层继续保留。
+
+### 小幅运动与眨眼形状
+
+![头发小幅摆动的本地形变预览](examples/blonde-maid/previews/hair-motion.gif)
+
+GIF 为小幅发束形变检查：侧发自由端水平约 ±4 像素，中刘海约 ±1.8 像素，根部保持约束。它不是 AE 运行录像，也不是完整 Live2D 模型演示。
+
+![眼部睁眼、半闭眼与闭眼替换形状](examples/blonde-maid/previews/blink-states.jpg)
+
+上图展示拆分保留的眨眼替换形状，实际动画仍需在目标软件中设置。
+
+### 下载示例
+
+- [完整素材 ZIP](examples/blonde-maid/blonde-maid-assets.zip)：包含 PSD、对齐透明 PNG、导入文件和检查资料。
+- [分层 PSD](examples/blonde-maid/blonde-maid-layers.psd)（约 12 MB；打开 GitHub 文件页后选择下载）。
+- [上色后的透明 PNG](examples/blonde-maid/blonde-maid-colored.png)。
+- [逐层 PNG 和坐标信息](examples/blonde-maid/)。
+
+示例放在 `examples/`，不属于运行 skill 的必要依赖；只安装技能的用户可以不保留该目录。ZIP 下载页中选择下载原始文件即可获取完整压缩包。
+
 ## 安装
 
 ### 方法一：通过 Skill Installer
