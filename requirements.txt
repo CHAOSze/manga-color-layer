@@ -1,0 +1,6 @@
+# Optional helper-script dependencies; model/backend environments are separate.
+Pillow
+numpy
+psd-tools[composite]
+opencv-python
+scipy

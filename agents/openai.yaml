@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manga Coloring and Animation Layers"
+  short_description: "参照彩色图保留线稿与网点，并制作带遮挡补画的角色动画分层素材"
+  default_prompt: "Use $manga-color-layer to color this manga drawing faithfully to the reference and prepare completed PSD layers for puppet animation."

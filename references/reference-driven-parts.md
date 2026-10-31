@@ -1,0 +1,18 @@
+# Learn construction from a reference PSD
+
+Use scripts/audit_psd.py for a read-only layer inventory and contact sheets. Inspect pixels, hierarchy, offsets, draw order and hidden surfaces. Compare visible contours with the complete hidden shape; note how roots, neck, cloth and finger contacts overlap. Geometric overlap percentages cannot certify correct drawing.
+
+Infer which layers support relative motion, replacement, deformation or depth order, and which are grouped because they behave together. Distinguish incidental organization from functional construction. A reference with detailed facial articulation does not require every subject to have that articulation; a simple reference does not justify omitting motion the user requests. Evaluate hidden coverage and continuity rather than layer count.
+
+Translate observations into a pose-specific part graph: motion, parent, rigid/flexible areas, attachment points, occluders and completion needs. Do not transplant the reference's face, palette, layer count or resolution. Choose extraction or redraw using artist-redraw.md. If independent eye/mouth layers or expression animation are requested, complete a clean face base and remove stray feature ink/shadows before adding movable features; never retain duplicate baked-in eyes or mouths underneath.
+
+Use the reference to challenge automatic boundaries and expose missing backing, not merely to rename generated classes. Review actual drawing quality and motion exposure after reconstruction.
+
+For feature ownership, eye/mouth control levels and facial review gates, read [facial-parts.md](facial-parts.md).
+
+For an extracted hair lock, inspect the reference's entire isolated plate: a complete elongated strip may include a closed curved root and several attached fine tips. A visible-region polygon with incidental side wings is not equivalent. Complete the strip along its own flow and provide a quiet underlying root surface; a narrow seam margin cannot replace a missing scalp region. Hide each lock to inspect that surface. When neighboring locks gain little useful independent motion but repeatedly expose unstable boundaries, combine them into one connected plate and retain only useful independent controls. Rebuild order, controls, pins and motion evidence after this decision; do not preserve an earlier split merely because it was requested before the defect became apparent.
+
+## Refine an approved foreground plate
+Choose new boundaries from strand flow and the useful independent motion, not a left/center/right grid. A center lock should be an elongated, connected plate rooted at the actual parting; retain attached fine tips and avoid unrelated side wings. Keep neighboring side locks together when their shared crown makes separate controls fragile. Complete their concealed surface inside that same plate; a completion region is not automatically another head-top layer. Preserve already accepted parts while repairing the disputed neighbor.
+
+Compare the isolated exported plate directly with the selected earlier completion. A good redraw can be spoiled by later compositing: old extracted ink, shadows or source restoration placed over it can resurrect the exact seam it removed. Give the reviewed replacement ownership of its repaired region; blend only its external color joins, not a structural contour, and do not crop the completed material back into the old visible fragment. Inspect the actual saved PSD with the center hidden, then with both plates visible, before small independent/opposing motion. Check the root-to-length join at native resolution as well as normal size. A delivery preview or good intermediate does not certify the exported file.
