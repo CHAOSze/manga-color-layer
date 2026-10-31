@@ -9,6 +9,8 @@ Use this sequence for coloring plus animation-layer work. A coloring-only task e
 - Approved colored master: the visible appearance that the separated layers must reproduce at rest.
 - Output: actual exported layer assembly, not a convenient earlier preview.
 
+For public demonstrations, label the original drawing, pre-separation colored master, and exported static assembly separately. Show the actual colored master as the coloring result; do not replace it with the layer composite. Retain that master as an independent downloadable file.
+
 Record approved exceptions such as a chosen iris treatment or prop-color correction. Freeze the reviewed colored master before judging layer fidelity. A preferred old PSD is a construction starting point; it does not override the drawing or colored master. If a later material decision changes the coloring, correct/review the master first and then compare the rebuilt layers against that corrected master. Do not silently change color only inside the separated output.
 
 ## A. Coloring: drawing versus colored image

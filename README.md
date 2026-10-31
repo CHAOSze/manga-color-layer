@@ -18,15 +18,44 @@
 
 以下示例展示金发女仆角色的参考配色与分层结果。示例画稿和角色的权利归各自权利人；此处用于非商业效果交流，不构成对原作素材的授权。
 
-### 原图与上色
+### 原图与上色（分层前）
 
 ![原图与上色效果对比](examples/blonde-maid/previews/coloring-comparison.jpg)
+
+上图右侧使用的是[分层前确认的上色图](examples/blonde-maid/blonde-maid-color-master.png)，不是 PSD 的静态重组图。它是上色阶段的结果，也用于后续分层效果对比。
+
+### 分层后的静态组合
+
+<img src="examples/blonde-maid/blonde-maid-colored.png" alt="PSD 分层后的静态组合，区别于上面的分层前上色图" width="420">
+
+上图来自分层结果的默认组合，包含后续遮挡补画和局部边界整理。它用于展示分层交付效果，不能替代分层前的上色结果。
 
 ### 前发细化拆分
 
 ![中刘海与左右刘海独立图层](examples/blonde-maid/previews/hair-layers.jpg)
 
 此例前发保留两个图层：中刘海，以及包含完整遮挡补画的左右刘海。没有额外拆出头顶层；其他已确认的眼部、嘴部、后发和身体图层继续保留。
+
+### 全部拆分图层（19 层）
+
+![全部 19 个角色图层总览](examples/blonde-maid/previews/all-layers.jpg)
+
+以下包含全部图层，左右按画面方向命名。四个半闭眼/闭眼替换层在默认组合中隐藏，也全部列出。展示卡片仅裁去透明留白并缩放方便检查；原始 PNG 仍保持统一画布、坐标和透明背景。点击卡片可打开对应原始 PNG。
+
+<details>
+<summary>展开逐层查看全部 19 层</summary>
+
+| 图层 | 图层 | 图层 |
+| --- | --- | --- |
+| **01 后发**<br>[![01 后发](examples/blonde-maid/previews/layer-cards/rear_hair.png)](examples/blonde-maid/layers/blonde-maid-01_rear_hair.png) | **02 头部与身体**<br>[![02 头部与身体](examples/blonde-maid/previews/layer-cards/head_body.png)](examples/blonde-maid/layers/blonde-maid-02_head_body.png) | **03 左眉毛**<br>[![03 左眉毛](examples/blonde-maid/previews/layer-cards/brow_viewer_left.png)](examples/blonde-maid/layers/blonde-maid-03_brow_viewer_left.png) |
+| **04 左眼眼白**<br>[![04 左眼眼白](examples/blonde-maid/previews/layer-cards/eye_viewer_left_white.png)](examples/blonde-maid/layers/blonde-maid-04_eye_viewer_left_white.png) | **05 左眼虹膜**<br>[![05 左眼虹膜](examples/blonde-maid/previews/layer-cards/eye_viewer_left_iris.png)](examples/blonde-maid/layers/blonde-maid-05_eye_viewer_left_iris.png) | **06 左眼上眼皮**<br>[![06 左眼上眼皮](examples/blonde-maid/previews/layer-cards/eye_viewer_left_upper_lid.png)](examples/blonde-maid/layers/blonde-maid-06_eye_viewer_left_upper_lid.png) |
+| **07 左眼下眼皮与泪水**<br>[![07 左眼下眼皮与泪水](examples/blonde-maid/previews/layer-cards/eye_viewer_left_lower_lid_tears.png)](examples/blonde-maid/layers/blonde-maid-07_eye_viewer_left_lower_lid_tears.png) | **08 左眼半闭替换（默认隐藏）**<br>[![08 左眼半闭替换（默认隐藏）](examples/blonde-maid/previews/layer-cards/eye_viewer_left_half.png)](examples/blonde-maid/layers/blonde-maid-08_eye_viewer_left_half.png) | **09 左眼闭眼替换（默认隐藏）**<br>[![09 左眼闭眼替换（默认隐藏）](examples/blonde-maid/previews/layer-cards/eye_viewer_left_closed.png)](examples/blonde-maid/layers/blonde-maid-09_eye_viewer_left_closed.png) |
+| **10 右眉毛**<br>[![10 右眉毛](examples/blonde-maid/previews/layer-cards/brow_viewer_right.png)](examples/blonde-maid/layers/blonde-maid-10_brow_viewer_right.png) | **11 右眼眼白**<br>[![11 右眼眼白](examples/blonde-maid/previews/layer-cards/eye_viewer_right_white.png)](examples/blonde-maid/layers/blonde-maid-11_eye_viewer_right_white.png) | **12 右眼虹膜**<br>[![12 右眼虹膜](examples/blonde-maid/previews/layer-cards/eye_viewer_right_iris.png)](examples/blonde-maid/layers/blonde-maid-12_eye_viewer_right_iris.png) |
+| **13 右眼上眼皮**<br>[![13 右眼上眼皮](examples/blonde-maid/previews/layer-cards/eye_viewer_right_upper_lid.png)](examples/blonde-maid/layers/blonde-maid-13_eye_viewer_right_upper_lid.png) | **14 右眼下眼皮与泪水**<br>[![14 右眼下眼皮与泪水](examples/blonde-maid/previews/layer-cards/eye_viewer_right_lower_lid_tears.png)](examples/blonde-maid/layers/blonde-maid-14_eye_viewer_right_lower_lid_tears.png) | **15 右眼半闭替换（默认隐藏）**<br>[![15 右眼半闭替换（默认隐藏）](examples/blonde-maid/previews/layer-cards/eye_viewer_right_half.png)](examples/blonde-maid/layers/blonde-maid-15_eye_viewer_right_half.png) |
+| **16 右眼闭眼替换（默认隐藏）**<br>[![16 右眼闭眼替换（默认隐藏）](examples/blonde-maid/previews/layer-cards/eye_viewer_right_closed.png)](examples/blonde-maid/layers/blonde-maid-16_eye_viewer_right_closed.png) | **17 嘴部**<br>[![17 嘴部](examples/blonde-maid/previews/layer-cards/mouth.png)](examples/blonde-maid/layers/blonde-maid-17_mouth.png) | **18 左右刘海**<br>[![18 左右刘海](examples/blonde-maid/previews/layer-cards/bangs_sides.png)](examples/blonde-maid/layers/blonde-maid-18_bangs_sides.png) |
+| **19 中刘海**<br>[![19 中刘海](examples/blonde-maid/previews/layer-cards/bangs_middle.png)](examples/blonde-maid/layers/blonde-maid-19_bangs_middle.png) |  |  |
+
+</details>
 
 ### 小幅运动与眨眼形状
 
@@ -42,7 +71,8 @@ GIF 为小幅发束形变检查：侧发自由端水平约 ±4 像素，中刘�
 
 - [完整素材 ZIP](examples/blonde-maid/blonde-maid-assets.zip)：包含 PSD、对齐透明 PNG、导入文件和检查资料。
 - [分层 PSD](examples/blonde-maid/blonde-maid-layers.psd)（约 12 MB；打开 GitHub 文件页后选择下载）。
-- [上色后的透明 PNG](examples/blonde-maid/blonde-maid-colored.png)。
+- [分层前上色图](examples/blonde-maid/blonde-maid-color-master.png)。
+- [分层后静态组合 PNG](examples/blonde-maid/blonde-maid-colored.png)。
 - [逐层 PNG 和坐标信息](examples/blonde-maid/)。
 
 示例放在 `examples/`，不属于运行 skill 的必要依赖；只安装技能的用户可以不保留该目录。ZIP 下载页中选择下载原始文件即可获取完整压缩包。
@@ -119,6 +149,44 @@ PNG 部件不是时间序列。导入脚本也不等于完成绑定：导入后�
 6. **静态与动态都要检查。** 同时检查默认组合、单独图层和隐藏前景后的底层。图层不透明度为 100%，不代表材质内部像素没有半透明问题。
 
 这些是按素材取舍的原则，不是固定的两层、三层模板。详细流程见 [SKILL.md](SKILL.md)。
+
+## 依赖与运行方式
+
+**See-through 是本仓库本地自动拆分封装的依赖，不是所有使用方式的强制依赖。** skill 本身是工作流程；只有运行相应脚本/后端时才需要其运行环境。
+
+| 使用方式 | 必需内容 | 是否需要本地 See-through |
+| --- | --- | --- |
+| 阅读流程、查看 PNG / GIF 示例 | 文档/图片查看工具；不需要安装 Python | 否 |
+| 由助手完成参考上色、云端补画与分层整理 | 支持技能的 AI 助手、实际可用的图像生成/编辑工具、按需提供的文件导出环境；技能不会自动提供模型访问权限 | 否 |
+| PSD 分析、部件整理及 AE 素材导出 | Python、Pillow、NumPy、psd-tools（含 composite 依赖） | 否；但 `export_ae.py` 的输入格式针对 See-through 方形补边输出 |
+| 本地小范围形变检查 | 上述辅助库，另加 OpenCV、SciPy | 否 |
+| `scripts/run_backend.py` 自动拆分 | See-through 源码及它的依赖、兼容的 PyTorch / GPU 环境、LayerDiff 3D 和 Marigold 模型目录 | **是** |
+| 在 AE / Cubism 中正式绑定和播放 | 对应的目标软件及人工配置的网格、控制和关键帧 | 导入已准备素材时不需要 |
+
+### 通用辅助脚本
+
+在独立 Python 环境中运行 `python -m pip install -r requirements.txt`。本仓库的依赖清单只安装 Pillow、NumPy、psd-tools[composite]、opencv-python 和 SciPy；不包含 PyTorch、See-through 或模型权重。没有锁定这些通用库的版本，也不承诺所有版本组合均已测试。
+
+### 可选的 See-through 自动拆分路径
+
+先按 [See-through 上游安装文档](https://github.com/shitagaki-lab/see-through#environment-setup) 安装其源码、基础依赖与适配显卡的 PyTorch。上游 `requirements.txt` 包含 `./common`、`./annotators` 等本地模块，应在 **See-through 仓库根目录** 安装，不能只复制该依赖文件到本项目。不同提交可能改变环境和接口，请记录实际使用的提交与模型版本。
+
+需要的两个模型：
+
+- [LayerDiff 3D](https://huggingface.co/layerdifforg/seethroughv0.0.2_layerdiff3d)：生成透明语义图层。
+- [Marigold Depth](https://huggingface.co/24yearsold/seethroughv0.0.1_marigold)：估计深度与绘制顺序。
+
+本封装使用 CUDA 路径，调用 `torch.cuda` 并检查 GPU。它**不会自动安装 See-through 或下载模型**，且设置了离线模型加载；必须提前准备好模型目录。先检查环境，示例路径均为占位符：
+
+```sh
+python scripts/run_backend.py --repo /path/to/see-through --input /path/to/character.png --output /path/to/output --layer-model /path/to/layerdiff3d --depth-model /path/to/marigold --stage check
+```
+
+确认接口和模型加载兼容后，可将 `--stage check` 改为 `--stage all` 执行本封装所包含的阶段。上游的完整主流程还可能执行单独的头部细分等步骤；这个历史版本封装不承诺与上游最新主流程完全等价。需要上游完整流程时，按上游文档使用 `inference/scripts/inference_psd.py`。不要把环境检查通过当作完整推理已经测试成功。
+
+本项目此前检查过的 See-through 提交为 `df019de5129d6c4b406587a14c3501669441a783`；这不代表该历史提交已适配所有当前依赖组合。显存需求随分辨率、精度、卸载和模型版本变化，应以实际配置测试为准。本次依赖说明核对了 [上游 README](https://github.com/shitagaki-lab/see-through/blob/main/README.md) 与 [上游依赖清单](https://github.com/shitagaki-lab/see-through/blob/main/requirements.txt)，未在本次文档更新中重跑推理。
+
+ComfyUI-See-through 是可选的另一种集成，不是运行本封装的必需组件。PSD2Live 是可选的后续编辑/变形工具，也不是本 skill 的必装依赖。模型、第三方后端和示例素材仍需分别遵守各自的使用要求。
 
 ## 目录与辅助脚本
 
